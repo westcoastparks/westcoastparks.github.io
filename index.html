@@ -1,0 +1,124 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WestCoastParks</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header-container">
+      <nav>
+        <ul>
+          <li> <a href="#about">About us</a> </li>
+          <li> <a href="#team">Team</a> </li>
+          <li> <a href="#links">Staff Shoutout</a> </li>
+          <li> <a href="https://store.westcoastparks.us">Store</a> </li>
+        </ul>
+      </nav>
+
+      <div class="header" id="home">
+        <img src="assets/yep.png" height="200" width="200">
+        <p>Welcome to WestCoastParks.</p>
+      </div>
+    </div>
+
+    <div class="about block-space" id="about">
+      <h1 class="text-gardient">About us</h1>
+      <p>Established in Mid-2019, WestCoastParks
+        was started by a team of 3 owners: Ryan, Jay, and Dylan. since then
+        they have expanded their team, and 
+        have over 15+ Active Staff Members. With an active discord server, custom coded
+        Java & Web Devleopment WestCoastParks is the ultimate themepark ultimatum.
+        Coming with Disneyland, Knotts Berry Farm, and Universal Studios Hollywood as the main attractions
+        and aswell coming with Seasonal Parks & Custom Parks/Attractions, WestCoastParks is the #1 Location for
+        Custom and 1:1 theme parks based on the West Coast of America.
+      </p>
+    </div>
+
+    <div class="team" id="team">
+      <div class="flex-container">
+        <div class="flex-item">
+          <img src="https://minotar.net/helm/7ed0a47d-a9c2-49d7-820b-b7f84fecfe49/100.png" alt="">
+          <!-- Replace "9ce44ca49fc64fe287ee6e67839d332e" with your UUID without hyphens -->
+          <h1 class="text-gardient">DecentDorito</h1>
+          <h5>Guest Relations Lead</h5>
+        </div>
+        <div class="flex-item">
+          <img src="https://minotar.net/helm/03b8f1e5-bafa-4493-8d48-6242bd338c9e/100.png" alt="">
+          <h1 class="text-gardient">santiagos_</h1>
+          <h5>Imagineer Lead</h5>
+        </div>
+        <div class="flex-item">
+          <img src="https://minotar.net/helm/d4fc659b-bb4f-4aa2-9e78-caf4ee19fad8/100.png" alt="">
+          <h1 class="text-gardient">OhWinnie</h1>
+          <h5>Development Executive</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact block-space" id="links">
+      <h1 class="text-gardient">Special Links</h1>
+      <div class="flex-container">
+        <div class="flex-item">
+          <a href="https://discord.gg/m22HH5H"> <!-- Replace # with the a link -->
+            <img src="assets/discord.png" alt="">
+          </a>
+        </div>
+        <div class="flex-item">
+          <a href="https://store.westcoastparks.us">
+            <img src="/assets/1377239.png" width="128" height="128" alt="">
+          </a>
+        </div>
+        <div class="flex-item">
+          <a href="https://www.twitter.com/westcoastparks">
+            <img src="assets/twitter.png" alt="">
+          </a>
+        </div>
+        <div class="flex-item">
+          <a href="https://www.youtube.com/channel/UCj9RBkb47I7f_xA4JsNPK5A">
+            <img src="assets/youtube.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2019 - WestCoastParks | Developed by <a href="https://twitter.com/westcoastparks">WestCoastParks Development</a></p>
+    </footer>
+    <script type="text/javascript">
+    $('a[href*="#"]')
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function(event) {
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          &&
+          location.hostname == this.hostname
+        ) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000, function() {
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) {
+                return false;
+              } else {
+                $target.attr('tabindex','-1');
+                $target.focus();
+              };
+            });
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
